@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
-          <div 
+          <div
             ref={leftColRef}
             className={`space-y-10 transition-all duration-700 ease-out ${isLeftColVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
           >
@@ -53,11 +53,20 @@ const Contact: React.FC = () => {
             className={`transition-all duration-700 ease-out delay-200 ${isRightColVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
           >
             <div className="bg-background rounded-lg border border-gray-200/80 p-4">
-                <img src="https://images.unsplash.com/photo-1599939563033-5964821c1822?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Map of North Goa" className="rounded-md object-cover w-full h-[28rem]"/>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d9372.462680346453!2d73.75857986097513!3d15.556571071816979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20Zeib%20Reina%20Complex%2C%20Naika%20Vaddo%2C%20Market%2C%20Calangute-!5e0!3m2!1sen!2sin!4v1766598335636!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-md object-cover w-full h-[28rem]"
+              ></iframe>
             </div>
             <div className="mt-6">
-                <h4 className="font-serif text-xl font-bold mb-2 text-text-dark">Our Service Areas</h4>
-                <p className="text-text-light">We are headquartered in Calangute and actively serve communities across North Goa, including major operations in Mapusa.</p>
+              <h4 className="font-serif text-xl font-bold mb-2 text-text-dark">Our Service Areas</h4>
+              <p className="text-text-light">We are headquartered in Calangute and actively serve communities across North Goa, including major operations in Mapusa.</p>
             </div>
           </div>
         </div>

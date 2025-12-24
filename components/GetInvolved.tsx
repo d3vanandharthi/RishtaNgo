@@ -18,7 +18,7 @@ const GetInvolved: React.FC = () => {
           <div className="mt-6 h-1 w-24 bg-primary mx-auto"></div>
         </div>
 
-        <div ref={ref} className="grid md:grid-cols-3 gap-8 text-center max-w-6xl mx-auto">
+        <div ref={ref} className="grid md:grid-cols-2 gap-8 text-center max-w-4xl mx-auto">
           {/* Donate */}
           <div className={`bg-surface p-8 rounded-lg border border-gray-200/80 transition-all duration-500 ease-out hover:-translate-y-2 hover:shadow-xl ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
             <HeartIcon />
@@ -41,19 +41,6 @@ const GetInvolved: React.FC = () => {
             <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }} className="bg-text-dark/90 text-white font-bold py-3 px-8 rounded-md hover:bg-text-dark transition duration-300">
               Contact Us
             </a>
-          </div>
-
-          {/* Careers */}
-          <div className={`bg-surface p-8 rounded-lg border border-gray-200/80 transition-all duration-500 ease-out delay-400 hover:-translate-y-2 hover:shadow-xl ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-            <BriefcaseIcon />
-            <h3 className="font-serif text-2xl font-bold my-4">Careers</h3>
-            <p className="text-text-light mb-2">
-              Join our passionate team and build a rewarding career in social service.
-            </p>
-            <div className="text-left bg-background p-4 rounded-md mt-6">
-              <p className="font-semibold text-primary">Now Hiring: Counselor</p>
-              <p className="text-sm text-text-light">Salary: Rs. 10,000-12,000/month. Make a direct impact in the community.</p>
-            </div>
           </div>
         </div>
       </div>
